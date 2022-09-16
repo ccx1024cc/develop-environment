@@ -1,0 +1,51 @@
+{
+    "coc.preferences.willSaveHandlerTimeout": 2000,
+    "coc.preferences.formatOnSaveFiletypes": [
+        "go",
+        "rust"
+    ],
+    "languageserver": {
+        "golang": {
+            "command": "gopls",
+            "rootPatterns": [
+                "go.mod",
+                ".vim/",
+                ".git/",
+                ".hg/"
+            ],
+            "filetypes": [
+                "go"
+            ],
+            "initializationOptions": {
+                "usePlaceholders": true
+            }
+        },
+        "bash": {
+            "command": "bash-language-server",
+            "args": [
+                "start"
+            ],
+            "filetypes": [
+                "sh"
+            ],
+            "ignoredRootPaths": [
+                "~"
+            ]
+        }
+    },
+    "rust-analyzer.server.path": "/home/morgan/.cargo/bin/rust-analyzer",
+    "rust-analyzer.lruCapacity": 100,
+    "rust-analyzer.lens.methodReferences": true,
+    "rust-analyzer.cargo.features": [
+    ],
+    "clangd.path": "/usr/bin/clangd",
+    "diagnostic.errorSign": "✘",
+    "diagnostic.infoSign": "i",
+    "python.analysis.extraPaths": [
+        "framework"
+    ],
+    "python.formatting.autopep8Args": [
+        "--max-line-length",
+        "120"
+    ]
+}

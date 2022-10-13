@@ -1,3 +1,6 @@
+autoload -Uz compinit
+compinit
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -73,6 +76,7 @@ ZSH_THEME="agnoster"
 plugins=(git mvn docker docker-compose docker-machine zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+source <(kubectl completion zsh)
 
 # User configuration
 

@@ -15,6 +15,7 @@ set scrolloff=5
 set  ruler
 set history=1000
 set listchars=tab:»■,trail:■
+set maxmempattern=2000
 autocmd FileType rust setl foldmethod=syntax
 autocmd FileType go setl foldmethod=syntax
 autocmd FileType python setl foldmethod=indent

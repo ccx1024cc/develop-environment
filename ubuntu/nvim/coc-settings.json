@@ -37,6 +37,7 @@
     "rust-analyzer.lruCapacity": 100,
     "rust-analyzer.lens.methodReferences": true,
     "rust-analyzer.cargo.features": [
+        "fusedev"
     ],
     "clangd.path": "/usr/bin/clangd",
     "diagnostic.errorSign": "✘",

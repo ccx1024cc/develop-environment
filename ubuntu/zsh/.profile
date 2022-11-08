@@ -29,8 +29,7 @@ fi
 
 # add go environment
 export GOPATH=${HOME}/workspace/go/
-export PATH="${HOME}/workspace/go/bin:$PATH"
-export PATH=".:/usr/local/nydus:/usr/local/go/bin:$PATH"
+export PATH=".:/usr/local/go/bin:${HOME}/workspace/go/bin:$PATH"
 export GO111MODULE=on
 
 

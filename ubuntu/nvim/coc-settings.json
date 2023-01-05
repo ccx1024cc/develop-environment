@@ -36,9 +36,7 @@
     "rust-analyzer.server.path": "/home/morgan/.cargo/bin/rust-analyzer",
     "rust-analyzer.lruCapacity": 100,
     "rust-analyzer.lens.methodReferences": true,
-    "rust-analyzer.cargo.features": [
-        "fusedev"
-    ],
+    "rust-analyzer.cargo.features": [],
     "clangd.path": "/usr/bin/clangd",
     "diagnostic.errorSign": "✘",
     "diagnostic.infoSign": "i",

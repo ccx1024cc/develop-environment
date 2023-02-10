@@ -2,6 +2,7 @@
     "coc.preferences.willSaveHandlerTimeout": 2000,
     "coc.preferences.formatOnSave": true,
     "coc.preferences.formatOnType": true,
+    "coc.preferences.extensionUpdateCheck": "daily",
     "languageserver": {
         "golang": {
             "command": "gopls",
@@ -37,7 +38,6 @@
     "rust-analyzer.cargo.features": [
         "virtiofs"
     ],
-    "clangd.path": "/usr/bin/clangd",
     "diagnostic.errorSign": "✘",
     "diagnostic.infoSign": "i",
     "python.analysis.extraPaths": [
@@ -46,5 +46,6 @@
     "python.formatting.autopep8Args": [
         "--max-line-length",
         "120"
-    ]
+    ],
+    "clangd.checkUpdates": true
 }

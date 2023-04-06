@@ -12,11 +12,13 @@ set wrap
 set linebreak
 set wrapmargin=2
 set scrolloff=5
-set  ruler
+set ruler
 set history=1000
 set listchars=tab:»■,trail:■
 set maxmempattern=2000
 set switchbuf=usetab,newtab
+set cursorcolumn
+set colorcolumn=80
 autocmd FileType rust setl foldmethod=syntax
 autocmd FileType go setl foldmethod=syntax
 autocmd FileType python setl foldmethod=indent
@@ -216,6 +218,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -229,4 +232,3 @@ require('nightfox').load({
 })
 
 EOF
-

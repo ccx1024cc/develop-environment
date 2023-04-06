@@ -1,7 +1,7 @@
 {
     "coc.preferences.willSaveHandlerTimeout": 2000,
-    "coc.preferences.formatOnSave": true,
-    "coc.preferences.formatOnType": true,
+    "coc.preferences.formatOnSave": false,
+    "coc.preferences.formatOnType": false,
     "coc.preferences.extensionUpdateCheck": "daily",
     "languageserver": {
         "golang": {
@@ -35,9 +35,7 @@
     "rust-analyzer.server.path": "/home/morgan/.cargo/bin/rust-analyzer",
     "rust-analyzer.lruCapacity": 100,
     "rust-analyzer.lens.methodReferences": true,
-    "rust-analyzer.cargo.features": [
-        "virtiofs"
-    ],
+    "rust-analyzer.cargo.features": [],
     "diagnostic.errorSign": "✘",
     "diagnostic.infoSign": "i",
     "python.analysis.extraPaths": [

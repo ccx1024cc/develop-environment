@@ -219,6 +219,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'
+Plug 'numToStr/Comment.nvim'
+
 
 call plug#end()
 
@@ -230,5 +232,9 @@ require('nightfox').load({
         transparent = true
     }
 })
+
+
+-- Configuration of comment
+require('Comment').setup()
 
 EOF

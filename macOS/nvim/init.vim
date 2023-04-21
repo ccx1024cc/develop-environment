@@ -174,5 +174,14 @@ Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }}
+Plug 'numToStr/Comment.nvim'
 
 call plug#end()
+
+lua << EOF
+
+-- Configuration of comment
+require('Comment').setup()
+
+EOF
+

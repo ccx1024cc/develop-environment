@@ -32,10 +32,11 @@
             ]
         }
     },
-    "rust-analyzer.server.path": "/home/morgan/.cargo/bin/rust-analyzer",
+    "rust-analyzer.updates.checkOnStartup": true,
     "rust-analyzer.lruCapacity": 100,
     "rust-analyzer.lens.methodReferences": true,
-    "rust-analyzer.cargo.features": [],
+    "rust-analyzer.cargo.features": ["virtiofs"],
+    "rust-analyzer.check.features": ["virtiofs"],
     "diagnostic.errorSign": "✘",
     "diagnostic.infoSign": "i",
     "python.analysis.extraPaths": [

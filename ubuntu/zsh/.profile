@@ -37,8 +37,19 @@ export GOPRIVATE=gitlab.alipay-inc.com,code.alipay.com;
 export GOPROXY=https://goproxy.io;
 export GIT_TERMINAL_PROMPT=1;
 
+# add java environment
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export PATH=$JAVA_HOME/bin:$PATH
+
 # add pip scripts path for python
 export PATH="/home/morgan/.local/bin:$PATH"
 
 # gpg for sign git hub commit
 export GPG_TTY=$(tty)
+
+# auto completion of kubectl
+source <(kubectl completion zsh)
+
+# home for openssl, because it's installed manually
+export OPENSSL_DIR=/usr/local/ssl

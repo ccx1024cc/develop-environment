@@ -8,11 +8,3 @@
 ## FS
 
 + XFS
-
-## DEVICE
-
-+ device mapper
-
-## MODULES
-
-+ kswapd migration nokmem

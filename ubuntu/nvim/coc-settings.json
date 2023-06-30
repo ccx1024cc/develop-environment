@@ -1,7 +1,7 @@
 {
     "coc.preferences.willSaveHandlerTimeout": 2000,
-    "coc.preferences.formatOnSave": false,
-    "coc.preferences.formatOnType": false,
+    "coc.preferences.formatOnSave": true,
+    "coc.preferences.formatOnType": true,
     "coc.preferences.extensionUpdateCheck": "daily",
     "languageserver": {
         "golang": {
@@ -35,8 +35,8 @@
     "rust-analyzer.updates.checkOnStartup": true,
     "rust-analyzer.lruCapacity": 100,
     "rust-analyzer.lens.methodReferences": true,
-    "rust-analyzer.cargo.features": ["virtiofs"],
-    "rust-analyzer.check.features": ["virtiofs"],
+    "rust-analyzer.cargo.features": [],
+    "rust-analyzer.check.features": [],
     "diagnostic.errorSign": "✘",
     "diagnostic.infoSign": "i",
     "python.analysis.extraPaths": [

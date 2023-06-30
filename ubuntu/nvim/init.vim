@@ -19,6 +19,7 @@ set maxmempattern=2000
 set switchbuf=usetab,newtab
 set cursorcolumn
 set colorcolumn=80
+set nobomb " remove BOM of UTF8-file
 autocmd FileType rust setl foldmethod=syntax
 autocmd FileType go setl foldmethod=syntax
 autocmd FileType python setl foldmethod=indent

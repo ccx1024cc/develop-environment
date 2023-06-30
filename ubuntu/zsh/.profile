@@ -34,7 +34,7 @@ export GO111MODULE=on
 
 
 export GOPRIVATE=gitlab.alipay-inc.com,code.alipay.com;
-export GOPROXY=https://goproxy.io;
+export GOPROXY=https://goproxy.io,direct;
 export GIT_TERMINAL_PROMPT=1;
 
 # add java environment

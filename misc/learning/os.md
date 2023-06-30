@@ -12,7 +12,16 @@
 
 + 4 level network vs 7 level network
 + CDN
++ rdma
 
 ## FS
 
 + pty
+
+## VERSION
+
++ musl
+
+## auth
+
++ apparmor:unconfined

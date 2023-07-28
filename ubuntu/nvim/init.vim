@@ -23,6 +23,7 @@ set nobomb " remove BOM of UTF8-file
 autocmd FileType rust setl foldmethod=syntax
 autocmd FileType go setl foldmethod=syntax
 autocmd FileType python setl foldmethod=indent
+autocmd User CocStatusChange redraws " support rust analyzer status bar refreshing
 
 " neovim coc configuration
 "
@@ -173,7 +174,6 @@ command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.org
 set statusline=%F
 set statusline+=\ %{coc#status()}%{get(b:,'coc_current_function','')}
 
-
 " Mappings for CoCList
 " Show all diagnostics
 nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
@@ -228,11 +228,17 @@ call plug#end()
 lua << EOF
 
 -- Configuration of schema - Dark fox
-require('nightfox').load({
-    options = {
-        transparent = true
+require('nightfox').setup({
+  options = {
+    transparent = true,
+    styles = {
+      comments = "italic",
+      keywords = "bold",
+      types = "italic,bold",
     }
+  }
 })
+vim.cmd("colorscheme nightfox")
 
 
 -- Configuration of comment

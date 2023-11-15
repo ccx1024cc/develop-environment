@@ -10,7 +10,7 @@ docker -- dockerd ----/
 
 ## Containerd
 
-`shell
+```shell
     pushd /tmp
 
     # download binaries
@@ -64,30 +64,30 @@ docker -- dockerd ----/
 
     popd
 
-`
+```
 
 ## Ctr
 
-`shell
+```shell
     ctr images pull docker.io/library/redis:alpine
     ctr run docker.io/library/redis:alpine redis
 
-`
+```
 
 ## Nerdctl
 
-`shell
+```shell
     pushd /tmp
 
     wget https://github.com/containerd/nerdctl/releases/download/v1.5.0/nerdctl-1.5.0-linux-amd64.tar.gz
     sudo nerdctl run -d --name nginx -p 80:80 nginx:alpine
 
     popd
-`
+```
 
 ## Crictl
 
-`shell
+```shell
     pushd /tmp
 
     # Download binaries
@@ -145,11 +145,11 @@ docker -- dockerd ----/
     crictl ps
     crictl exec -i -t XXX
     crictl rmp XXX
-`
+```
 
 ## Docker
 
-`shell
+```shell
     # Download binaries
     wget https://download.docker.com/linux/static/stable/x86_64/docker-24.0.7.tgz
 
@@ -192,7 +192,7 @@ docker -- dockerd ----/
     # Run images
     docker -H unix:///home/morgan/runtime/docker-24.0.7.linux-amd64/docker.sock run -it --name test --rm busybox sh
 
-`
+```
 
 ## Nydus snapshotter
 
@@ -200,7 +200,7 @@ TODO
 
 ## K8s
 
-`shell
+```shell
     # Install kubectl kubeadm kubelet
     sudo apt-get update
     sudo apt-get install -y apt-transport-https ca-certificates curl gpg
@@ -215,4 +215,4 @@ TODO
 
     # If fails
     sudo kubeadm reset
-`
+```

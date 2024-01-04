@@ -57,3 +57,6 @@ require("statusline")
 
 -- search configuration
 require("search")
+
+-- terminal configuration
+require("term")

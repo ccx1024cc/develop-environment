@@ -5,5 +5,6 @@
          Plug 'itchyny/lightline.vim'
          Plug 'nvim-lua/plenary.nvim'
          Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
+         Plug 'akinsho/toggleterm.nvim'
      call plug#end()
  ]]

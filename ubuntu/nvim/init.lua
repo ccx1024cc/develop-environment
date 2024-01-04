@@ -54,3 +54,6 @@ require("coc")
 
 -- statusline configuration
 require("statusline")
+
+-- search configuration
+require("search")

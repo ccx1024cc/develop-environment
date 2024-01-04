@@ -34,9 +34,16 @@ vim.api.nvim_create_autocmd("FileType", {
     pattern = "python",
     callback = function() vim.opt_local.foldmethod = "indent" end
 })
+-- vim.api.nvim_create_autocmd("User", {
+--     pattern = "CocStatusChange",
+--     command = "redraws"
+-- })
+-- update lightline automaticlly
 vim.api.nvim_create_autocmd("User", {
-    pattern = "CocStatusChange",
-    command = "redraws"
+  pattern = "CocStatusChange",
+  callback = function()
+    vim.fn['lightline#update']()
+  end
 })
 
 -- plugins installation
@@ -44,3 +51,6 @@ require("plugins")
 
 -- coc configuration
 require("coc")
+
+-- statusline configuration
+require("statusline")

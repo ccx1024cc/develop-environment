@@ -19,7 +19,7 @@ foreach host $hosts {
     send "sudo bash -c bash\r"
     expect "password for $user:"
 
-    send "....\r"
+    send "$password\r"
     expect -re {\r\n#$}
 
     # script

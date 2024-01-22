@@ -1,0 +1,32 @@
+set timeout 20
+
+set user "..."
+
+set password "..."
+
+set hosts {
+    "..."
+}
+
+foreach host $hosts {
+    spawn ssh $user@$host
+        expect {
+        "yes/no" { send "yes\r"; exp_continue }
+        "*assword:" { send "$password\r" }
+    }
+    expect -re {\r\n\$$}
+
+    send "sudo bash -c bash\r"
+    expect "password for $user:"
+
+    send "....\r"
+    expect -re {\r\n#$}
+
+    # script
+
+    send "exit\r"
+    expect -re {\r\n\$$}
+
+    send "exit\r"
+    expect eof
+}

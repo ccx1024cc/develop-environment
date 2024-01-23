@@ -60,3 +60,6 @@ require("search")
 
 -- terminal configuration
 require("term")
+
+-- hex edition configuration
+require("hexedit")

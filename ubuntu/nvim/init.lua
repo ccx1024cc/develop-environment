@@ -20,6 +20,7 @@ vim.o.switchbuf = "usetab,newtab"
 vim.o.cursorcolumn = true
 vim.o.colorcolumn = "80"
 vim.o.bomb = false -- remove BOM of UTF8-file
+vim.opt.swapfile = false -- close swap
 
 -- autocommand
 vim.api.nvim_create_autocmd("FileType", {

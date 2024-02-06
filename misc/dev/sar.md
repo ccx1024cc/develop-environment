@@ -1,3 +1,0 @@
-# HOW TO USE SAR
-
-## 

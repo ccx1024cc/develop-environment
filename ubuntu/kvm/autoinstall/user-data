@@ -1,0 +1,11 @@
+autoinstall:
+  version: 1
+  identity:
+    hostname: ci-node
+    username: morgan
+    password: "$6$dZBeFs2.LIPnppfe$KTFQRYOeGk/jeydlXq54IElM846Ltru/nU95PJr8k9E5c0GdlgJrWpm/RPPQBLj64j8s3Id1xM3kBPlkvUEvJ/"
+  ssh:
+    install-server: true
+    allow-pw: true
+    authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDMDL3G//g12RYqpequ1g5mEn+gFmwvfecSSWtezP9NaY/L8HL6Sc3tv8UeaEpIc8kIa6CqFkSxXKM61VM57DF1PoF5/hL+94F6qSC9PrqvB3GH3xR+Up+cKLu9F7gpjrDN5azABC07nhil1tHM+qSpSUOxIc98icrv6etEsbU4KwNoHpTI6MEz1IcXITjIAPWP7AZN3qcvqsBfJzGYoSG5TJ6S8X3cBCTsHT36P7XoQft/j+HakYtSZmMASW/fDhbN6speGR7ZkW/vQzoxt/AL7SMG/PqlP6AZ0Pf7FTsPT2Jwv9CM8V2B1sY8iTCsCIV1iJoBs9KW3S7UKn35msqmTOh9o+9zGUgklKDIAQ2CjM6if/R5XprnQG/lbceCNgrVocLRPNuoNvm2wJ+A7B8R4aMEKxKfWuEbUEFN5RmNJlIe9N5dthsg819ogVU3vcgPeaWJkDew8QIpRf7uCeszEmkx8AogdYbCLEGdZfBjo6fNPxaQt3rKrDgNd9AzFDU= wangshouyi@wangshouyi

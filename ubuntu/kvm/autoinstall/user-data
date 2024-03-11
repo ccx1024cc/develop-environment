@@ -1,11 +1,36 @@
+#cloud-config
 autoinstall:
   version: 1
+  storage:
+    config:
+    - {ptable: gpt, wipe: superblock, preserve: false, name: '', grub_device: true,
+      type: disk, id: disk-sda}
+    - {device: disk-sda, size: 1048576, flag: bios_grub, number: 1, preserve: false,
+      type: partition, id: partition-0}
+    - {device: disk-sda, size: 1073741824, wipe: superblock, flag: '', number: 2,
+      preserve: false, type: partition, id: partition-1}
+    - {fstype: ext4, volume: partition-1, preserve: false, type: format, id: format-0}
+    - {device: disk-sda, size: -1, wipe: superblock, flag: '', number: 3,
+      preserve: false, type: partition, id: partition-2}
+    - name: ubuntu-vg
+      devices: [partition-2]
+      preserve: false
+      type: lvm_volgroup
+      id: lvm_volgroup-0
+    - {name: ubuntu-lv, volgroup: lvm_volgroup-0, size: 100%, preserve: false,
+      type: lvm_partition, id: lvm_partition-0}
+    - {fstype: ext4, volume: lvm_partition-0, preserve: false, type: format, id: format-1}
+    - {device: format-1, path: /, type: mount, id: mount-1}
+    - {device: format-0, path: /boot, type: mount, id: mount-0}
   identity:
     hostname: ci-node
     username: morgan
-    password: "$6$dZBeFs2.LIPnppfe$KTFQRYOeGk/jeydlXq54IElM846Ltru/nU95PJr8k9E5c0GdlgJrWpm/RPPQBLj64j8s3Id1xM3kBPlkvUEvJ/"
+    password: "$6$gtvAWZEvLQ5RqkTY$3xiYH0XKG0h1W5ZBUImrVhyc/44hZGa1H3OLzp0teGXaFXrL4a6OWDIDhgEQRGPR9XRes.08d.bk88xrqqUo20"
   ssh:
     install-server: true
     allow-pw: true
     authorized-keys:
       - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDMDL3G//g12RYqpequ1g5mEn+gFmwvfecSSWtezP9NaY/L8HL6Sc3tv8UeaEpIc8kIa6CqFkSxXKM61VM57DF1PoF5/hL+94F6qSC9PrqvB3GH3xR+Up+cKLu9F7gpjrDN5azABC07nhil1tHM+qSpSUOxIc98icrv6etEsbU4KwNoHpTI6MEz1IcXITjIAPWP7AZN3qcvqsBfJzGYoSG5TJ6S8X3cBCTsHT36P7XoQft/j+HakYtSZmMASW/fDhbN6speGR7ZkW/vQzoxt/AL7SMG/PqlP6AZ0Pf7FTsPT2Jwv9CM8V2B1sY8iTCsCIV1iJoBs9KW3S7UKn35msqmTOh9o+9zGUgklKDIAQ2CjM6if/R5XprnQG/lbceCNgrVocLRPNuoNvm2wJ+A7B8R4aMEKxKfWuEbUEFN5RmNJlIe9N5dthsg819ogVU3vcgPeaWJkDew8QIpRf7uCeszEmkx8AogdYbCLEGdZfBjo6fNPxaQt3rKrDgNd9AzFDU= wangshouyi@wangshouyi
+  late-commands:
+    - echo 'morgan ALL=(ALL) NOPASSWD:ALL' > /target/etc/sudoers.d/morgan
+    - chmod 0440 /target/etc/sudoers.d/morgan

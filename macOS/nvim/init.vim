@@ -18,6 +18,10 @@ set listchars=tab:»■,trail:■
 autocmd FileType rust setl foldmethod=syntax
 autocmd FileType go setl foldmethod=syntax
 
+" macOS 14.6.1 (23G93) show term background image
+" vim.cmd([[highlight Normal ctermbg=none guibg=none]])
+" vim.cmd([[highlight NonText ctermbg=none guibg=none]])
+
 " neovim coc configuration
 "
 "

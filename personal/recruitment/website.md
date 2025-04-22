@@ -29,3 +29,4 @@
 - [东方电气国聘](https://www.iguopin.com/company/jobs?id=10685285543526575)
 - [东方电气官网](https://www.dongfang.com/zxns/gdrc.htm)
 - [国聘](https://www.iguopin.com/job?channel=social)
+- [成都体育学院](https://rczp.cdsu.edu.cn/base/frame/main.jsp?FM_SYS_ID=cdtyxy&FM_SYS_CODE=SYSTEM_RECRUIT#m)

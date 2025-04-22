@@ -30,3 +30,4 @@
 - [东方电气官网](https://www.dongfang.com/zxns/gdrc.htm)
 - [国聘](https://www.iguopin.com/job?channel=social)
 - [成都体育学院](https://rczp.cdsu.edu.cn/base/frame/main.jsp?FM_SYS_ID=cdtyxy&FM_SYS_CODE=SYSTEM_RECRUIT#m)
+- [成都设计咨询集团](https://www.cddc2021.com/recruit_list.html?step=1)

@@ -31,3 +31,4 @@
 - [国聘](https://www.iguopin.com/job?channel=social)
 - [成都体育学院](https://rczp.cdsu.edu.cn/base/frame/main.jsp?FM_SYS_ID=cdtyxy&FM_SYS_CODE=SYSTEM_RECRUIT#m)
 - [成都设计咨询集团](https://www.cddc2021.com/recruit_list.html?step=1)
+- [前程无忧](https://we.51job.com/pc/search?jobArea=090200&keyword=%E5%86%9C%E8%A1%8C&searchType=2&keywordType=)
